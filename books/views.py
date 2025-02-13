@@ -1,7 +1,19 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
 from datetime import datetime
-from . import models
+from . import models, forms
+
+# create reviews
+def create_review(request):
+    if request.method == 'POST':
+        form = forms.CreateReviewForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('book_list')
+    else:
+        form = forms.CreateReviewForm()
+    return render(request, template_name='create_review.html', context={'form': form})
+
 
 
 #books list
