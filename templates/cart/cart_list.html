@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Список товаров в корзине</h1>
+<ul>
+  {% for i in cart_lst %}
+  <li>
+    <p>{{ i.choice_book }}</p>
+    <p>Количество: {{ i.amount }}</p>
+    <p>{{ i.added_at }}</p>
+    <button><a href='/cart_list/{{ i.id }}/delete/'>Удалить товар</a></button>
+    <button><a href='/cart_list/{{ i.id }}/update/'>Редактировать товар</a></button>
+  </li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
