@@ -8,7 +8,7 @@
 <h1>Начать парсинг</h1>
 <form method="POST" enctype="multipart/form-data">
     {% csrf_token %}
-    {{ form.as_p }}
+    {% form.as_p %}
     <button type="submit">Начать</button>
 </form>
 </body>

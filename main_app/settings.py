@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'clothes',
     'cart',
     'parser_app',
+    'users',
 ]
 
 MIDDLEWARE = [

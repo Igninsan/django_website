@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Добро пожаловать</h1>
+    <ol>
+        {% for i in person %}
+      <li>
+        <p>{{ i.username }}</p>
+        <p>{{ i.age }}</p>
+        {% if i.salary %}
+        <p>Этот человек получает заработную плату в размере = {{i.salary}}</p>
+        {% else %}
+        <p>Заработная плата не определена</p>
+        {%endif%}
+      </li>
+      {% endfor %}
+    </ol>
+
+
+<form action="{% url 'users:login' %}" method="POST">
+    {% csrf_token %}
+    <button type="submit">Выйти из аккаунта</button>
+</form>
+
+</body>
+</html>
