@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70d73f97-0a6f-4868-a794-e7e06a2b032c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/users/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/users/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/users/user_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipes/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recipes/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipes/confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipes/create_ingredient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipes/create_recipe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipes/ingredient_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recipes/recipe_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_app/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/parser_app/ts_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/parser_app/ts_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>

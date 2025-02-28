@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'cart',
     'parser_app',
     'users',
+    'recipes',
 ]
 
 MIDDLEWARE = [

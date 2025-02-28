@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Список ингредиентов</h1>
+<ul>
+  {% for i in ingredient_lst %}
+  <li>
+    <p>{{ i.name }}</p>
+    <p>Количество: {{ i.quantity }}</p>
+  </li>
+  {% endfor %}
+  <li>
+    <button><a href='/create_ingredient/'>Добавить ингредиент</a></button>
+  </li>
+</ul>
+
+</body>
+</html>
