@@ -1,16 +1,24 @@
 from django.shortcuts import get_object_or_404
 from . import models, forms
 from django.views import generic
+from django.views.decorators.cache import cache_page
+from django.utils.decorators import method_decorator
+from django.core.cache import cache
 
 
 # Список товаров
+@method_decorator(cache_page(60*15), name='dispatch')
 class CartListView(generic.ListView):
     template_name = 'cart/cart_list.html'
     context_object_name = 'cart_lst'
     model = models.CartModel
 
     def get_queryset(self):
-        return self.model.objects.all().order_by('-id')
+        carts = cache.get('carts')
+        if not carts:
+            carts = self.model.objects.all().order_by('-id')
+            cache.set('carts', carts, 60*15)
+        return carts
 
 
 # def cart_list(request):
